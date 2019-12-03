@@ -12,6 +12,6 @@
 
 # Integrantes:
 ## Luana Florencio
-## Pedro Henrique 
+## Pedro Marinho
 ## Alisson Thiago
-## Aline 
+## Aline Venceslau
