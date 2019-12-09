@@ -1,0 +1,22 @@
+#mapa{
+	width: 650px;
+	background-color:rgb(13, 1, 0);
+	margin: 5%;
+	margin-left: 20%;
+	height: 500px;
+	align-items: center;
+}
+tr, td {
+	width:80px;
+	height:80px;
+	border:1px solid grey;
+	border-collapse: collapse;
+}
+table { 
+	border: 3px solid grey; 
+	border-collapse: collapse; 
+	
+}
+html {
+	background: rgb(13, 1, 0);
+}
