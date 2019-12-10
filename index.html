@@ -7,75 +7,86 @@
 </head>
 <body>
 	<div id="mapa">
-		<table>
-			<tbody>
-				<tr>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-				</tr>
-				<tr>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-				</tr>
-				<tr>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-				</tr>
-				<tr>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-				</tr>
-				<tr>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-				</tr>
-				<tr>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-					<td>Peça</td>
-				</tr>
-				
-			</tbody>
-		</table>		
+		<mapa-tabela v-for= ></mapa-tabela>
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script>
+		Vue.component('mapa-tabela', {
+			props: ['bloco' , 'peca'],
+			template: '<table>'+
+			'<tbody>'+
+				'<tr>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+				'</tr>'+
+				'<tr>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+				'</tr>'+
+				'<tr>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+				'</tr>'+
+				'<tr>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+				'</tr>'+
+				'<tr>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+				'</tr>'+
+				'<tr>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+					'<td>Peça</td>'+
+				'</tr>'+
+				
+			'</tbody>'+
+		'</table>'
+		})
+
+		var mapa = new Vue({
+			el:'#mapa',
+			data: {
+				
+			}
+		})
 
 	</script>
 
