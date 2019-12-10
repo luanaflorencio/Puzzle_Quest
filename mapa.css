@@ -5,6 +5,7 @@
 	margin-left: 20%;
 	height: 500px;
 	align-items: center;
+	box-shadow:10px 10px 10px 10px #888888;
 }
 tr, td {
 	width:80px;
