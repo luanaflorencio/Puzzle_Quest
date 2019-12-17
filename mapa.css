@@ -1,9 +1,19 @@
+
+
 #mapa {
     width: 650px;
     background-color: rgb(13, 1, 0);
     margin: 5% auto;
     height: 500px;
     align-items: center;
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+}
+
+.bloco {
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
 }
 
 tr,
@@ -23,16 +33,10 @@ html {
     background: rgb(13, 1, 0);
 }
 
-.bloco {
-    width: 80px;
-    height: 80px;
-}
-
 .caveira {
     background-image: url(caveira.png);
     background-size: cover;
     background-repeat: no-repeat;
-    filter: invert(100%);
 }
 
 .estrela {
@@ -47,6 +51,17 @@ html {
     background-repeat: no-repeat;
 }
 
-.circulo {
+.circulo-red {
     border-radius: 100%;
+    background-color: rgba(255, 113, 113, 0.897);
 }
+.circulo-blue{
+    border-radius: 100%;
+    background-color: rgb(0, 162, 255);
+
+}
+.circulo-green{
+    border-radius: 100%;
+    background-color: rgba(88, 255, 163, 0.849);
+}
+
