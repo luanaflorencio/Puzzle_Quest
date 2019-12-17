@@ -1,94 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<link rel="stylesheet" type="text/css" href="mapa.css">
-	<meta charset="utf-8">
-	<title></title>
+    <link rel="stylesheet" type="text/css" href="mapa.css">
+    <meta charset="utf-8">
+    <title></title>
 </head>
+
 <body>
-	<div id="mapa">
-		<mapa-tabela v-for= ></mapa-tabela>
-	</div>
+    <div id="mapa">
+        <table class="table table-dark">
+            <tbody>
+                <tr v-for="(item, index) in items" :key="index">
+                    <td v-for="(column, indexColumn) in columns" :key="indexColumn">{{ sorteandoObjeto() }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
-	<script>
-		Vue.component('mapa-tabela', {
-			template: '<table>'+
-			'<tbody>'+
-				'<tr>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-				'</tr>'+
-				'<tr>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-				'</tr>'+
-				'<tr>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-				'</tr>'+
-				'<tr>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-				'</tr>'+
-				'<tr>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-				'</tr>'+
-				'<tr>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-					'<td>Peça</td>'+
-				'</tr>'+
-				
-			'</tbody>'+
-		'</table>'
-		})
 
-		var mapa = new Vue({
-			el:'#mapa',
-			data: {
-				
-			}
-		})
-
-	</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <script src="blocos.js"></script>
+    <script>
+        var mapa = new Vue({
+            el: '#mapa',
+            data: {
+                items: [1, 2, 3, 4, 5, 6],
+                columns: [1, 2, 3, 4, 5, 6, 7, 8]
+            },
+            methods: {
+                sorteandoObjeto: function() {
+                    sorteandoObjeto();
+                }
+            }
+        })
+    </script>
 
 </body>
+
 </html>
