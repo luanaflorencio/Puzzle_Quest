@@ -1,21 +1,52 @@
-#mapa{
-	width: 650px;
-	background-color:rgb(13, 1, 0);
-	margin: 5% auto;
-	height: 500px;
-	align-items: center;
+#mapa {
+    width: 650px;
+    background-color: rgb(13, 1, 0);
+    margin: 5% auto;
+    height: 500px;
+    align-items: center;
 }
-tr, td {
-	width:80px;
-	height:80px;
-	border:1px solid grey;
-	border-collapse: collapse;
+
+tr,
+td {
+    width: 80px;
+    height: 80px;
+    border: 1px solid grey;
+    border-collapse: collapse;
 }
-table { 
-	border: 3px solid grey; 
-	border-collapse: collapse; 
-	
+
+table {
+    border: 3px solid grey;
+    border-collapse: collapse;
 }
+
 html {
-	background: rgb(13, 1, 0);
+    background: rgb(13, 1, 0);
+}
+
+.bloco {
+    width: 80px;
+    height: 80px;
+}
+
+.caveira {
+    background-image: url(caveira.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: invert(100%);
+}
+
+.estrela {
+    background-image: url(estrela.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.moeda {
+    background-image: url(moeda.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.circulo {
+    border-radius: 100%;
 }
