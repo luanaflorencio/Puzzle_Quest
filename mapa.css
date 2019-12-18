@@ -34,19 +34,19 @@ html {
 }
 
 .caveira {
-    background-image: url(caveira.png);
+    background-image: url(imagens/caveira.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .estrela {
-    background-image: url(estrela.png);
+    background-image: url(imagens/estrela.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .moeda {
-    background-image: url(moeda.png);
+    background-image: url(imagens/moeda.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
