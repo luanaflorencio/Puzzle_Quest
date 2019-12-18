@@ -9,6 +9,9 @@
 
 <body>
     <div id="mapa">
+
+        <div v-for="(bloco, index) in blocos" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragend="returnClasses(this)" ondragstart="drag(event)" class="bloco" v-bind:id="index" v-bind:class="bloco.getClass()"></div>
+
         <div v-for="bloco in blocos" class="bloco" v-on:click="metodo()" v-bind:class="bloco.getClass()"></div>
     </div>
 
@@ -22,7 +25,7 @@
                 blocos: []
             },
             mounted: function() {
-                for (i = 0; i < 64; i++) {
+                for (i = 0; i < 48; i++) {
                     let n = Math.random();
                     if (n < .15) {
                         this.blocos.push(new Caveira(10));
