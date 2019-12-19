@@ -12,7 +12,7 @@
 
         <div v-for="(bloco, index) in blocos" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragend="returnClasses(this)" ondragstart="drag(event)" class="bloco" v-bind:id="index" v-bind:class="bloco.getClass()"></div>
 
-        <div v-for="bloco in blocos" class="bloco" v-on:click="metodo()" v-bind:class="bloco.getClass()"></div>
+<!--         <div v-for="bloco in blocos" class="bloco" v-on:click="metodo()" v-bind:class="bloco.getClass()"></div> -->
     </div>
 
 
